@@ -1,3 +1,10 @@
+//
+GOALTIFY: APP DESIGN
+chatbot interface
+suggesting calendar
+the user can cofirm the the calendar
+
+//
 goaltify prompt
 
 make sure it is realistic, goaltify aims for achievable not just this and that
