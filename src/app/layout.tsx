@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import { ModeToggle } from "@/components/functionalUi/theme-toggle-button";
+import LogButton from "@/components/authUi/logButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -36,6 +37,7 @@ export default function RootLayout({
           <div className="w-full h-10 p-2">
             <div className="">
               <ModeToggle />
+              <LogButton />
             </div>
           </div>
           {children}

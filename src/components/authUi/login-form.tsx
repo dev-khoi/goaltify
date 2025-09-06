@@ -1,4 +1,3 @@
-import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import {
   Card,
@@ -12,13 +11,11 @@ import { Label } from "@/components/ui/label";
 import SignInWithGoogleButton from "./SignInWithGoogleButton";
 import Link from "next/link";
 import { login } from "@/lib/auth-actions";
+import { cn } from "@/lib/utils";
 
-export function LoginForm({
-  className,
-  ...props
-}: React.ComponentProps<"div">) {
+export function LoginForm({ className }: React.ComponentProps<"div">) {
   return (
-    <Card className="mx-auto max-w-sm">
+    <Card className={cn("mx-auto max-w-sm", className)}>
       <CardHeader>
         <CardTitle className="text-2xl">Login</CardTitle>
         <CardDescription>

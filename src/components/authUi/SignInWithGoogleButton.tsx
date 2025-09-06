@@ -11,7 +11,8 @@ const SignInWithGoogleButton = () => {
       className="w-full"
       onClick={() => {
         signInWithGoogle();
-      }}>
+      }}
+    >
       Login with Google
     </Button>
   );

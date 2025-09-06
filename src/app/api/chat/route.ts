@@ -3,10 +3,8 @@ import {
   streamText,
   UIMessage,
   convertToModelMessages,
-  tool,
   stepCountIs,
 } from "ai";
-import { z } from "zod";
 // Allow streaming responses up to 30 seconds
 export const maxDuration = 30;
 

@@ -60,7 +60,7 @@ export async function signout() {
     console.log(error);
     redirect("/error");
   }
-
+  console.log("logout success")
   redirect("/logout");
 }
 

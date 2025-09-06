@@ -17,6 +17,7 @@ export default function Home() {
             />
             Chat now
           </div>
+
           <UserGreetText />
         </Link>
       </main>

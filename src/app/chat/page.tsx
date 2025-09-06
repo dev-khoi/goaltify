@@ -1,6 +1,5 @@
 "use client";
 
-import { querying } from "@/lib/db";
 import { useChat } from "@ai-sdk/react";
 import { useState } from "react";
 export default function Chat() {
@@ -40,14 +39,6 @@ export default function Chat() {
           onChange={(e) => setInput(e.currentTarget.value)}
         />
       </form>
-
-      <button
-        onClick={async () => {
-          const result = await querying(); // Now runs on the server
-          console.log("Client received:", result);
-        }}>
-        click here
-      </button>
     </div>
   );
 }

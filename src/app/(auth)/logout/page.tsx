@@ -1,22 +1,13 @@
-'use client'
-import { useRouter } from "next/router"
+"use client";
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
 
-const logoutPage = () => {
-    const router = useRouter();
+const LogoutPage = () => {
+  const router = useRouter();
+  useEffect(() => {
+    setTimeout(() => router.push("/"), 2000);
+  }, [router]);
+  return <div>You have logged out... redirecting in a sec.</div>;
+};
 
-    useEffect(() => {
-        setTimeout(()=> {
-            router.push("/")
-        }, 1670)
-    })
-
-    return (
-        <div>
-            <h2>You have been logged out.</h2>
-            <p>Redirecting to home...</p>
-        </div>
-    )
-}
-
-export default logoutPage
+export default LogoutPage;
